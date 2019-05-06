@@ -2,6 +2,7 @@ import sys
 from flask import Flask, render_template, jsonify, redirect
 from flask_pymongo import PyMongo
 import scrape_mars
+import os
 
 sys.setrecursionlimit(2000)
 app = Flask(__name__)
