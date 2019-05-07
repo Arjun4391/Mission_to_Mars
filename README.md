@@ -64,5 +64,5 @@ Used MongoDB with Flask templating to create a new HTML page that displays all o
 
 ## Finished Product Screenshot
 
-
+![Finsihed mars site](Images/finished_site_image.png)
 
