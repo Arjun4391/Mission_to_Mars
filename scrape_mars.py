@@ -18,6 +18,7 @@ def init_browser():
 mars_info = {}
 
 def scrape_mars_news():
+    browser = None
     try: 
 
         # Initialize browser 
@@ -47,12 +48,12 @@ def scrape_mars_news():
         return mars_info
 
     finally:
-
-        browser.quit()
+        if browser != None:
+            browser.quit()
 
 # FEATURED IMAGE
 def scrape_mars_image():
-
+    browser = None
     try: 
 
         # Initialize browser 
@@ -87,12 +88,12 @@ def scrape_mars_image():
         
         return mars_info
     finally:
-
-        browser.quit()
+        if browser != None:
+            browser.quit()
 
 # Mars Weather 
 def scrape_mars_weather():
-
+    browser = None
     try: 
 
         # Initialize browser 
@@ -128,8 +129,8 @@ def scrape_mars_weather():
         
         return mars_info
     finally:
-
-        browser.quit()
+        if browser != None:
+            browser.quit()
 
 
 # Mars Facts
@@ -163,7 +164,7 @@ def scrape_mars_facts():
 
 
 def scrape_mars_hemispheres():
-
+    browser = None
     try: 
 
         # Initialize browser 
@@ -218,5 +219,5 @@ def scrape_mars_hemispheres():
 
         return mars_info
     finally:
-
-        browser.quit()
+        if browser != None:
+            browser.quit()
